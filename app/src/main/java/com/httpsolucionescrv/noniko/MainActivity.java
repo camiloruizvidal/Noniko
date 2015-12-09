@@ -16,7 +16,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -44,6 +47,26 @@ public class MainActivity extends AppCompatActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+        //IniciarListView();
+    }
+
+    private void IniciarListView()
+    {
+        /*
+        setContentView(R.layout.activity_main);
+        ListView lista = (ListView) findViewById(R.id.listView_lista);
+        ArrayList<Restaurante> arrayRestaurante= new ArrayList<Restaurante>();
+
+        Restaurante data;
+
+        for(int i=1;i<20;i++)
+        {
+            data = new Restaurante("Restaurante: "+i,"Direccion: "+i,"Telefono: ",i,i);
+            arrayRestaurante.add(data);
+        }
+        AdapterRestaurantes adapter = new AdapterRestaurantes(this,arrayRestaurante);
+        lista.setAdapter(adapter);
+        */
     }
 
     @Override

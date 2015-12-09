@@ -4,18 +4,18 @@
     android:id="@+id/layout"
     android:weightSum="1"
     android:baselineAligned="false">
-        <LinearLayout
-            android:orientation="horizontal"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/image">
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/image">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/ImagenRestaurante"
-                android:src="@drawable/restaurante"
-                android:layout_gravity="top" />
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:id="@+id/ImagenRestaurante"
+            android:src="@drawable/restaurante"
+            android:layout_gravity="top" />
+    </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -33,12 +33,12 @@
             android:text="Large Text"
             android:id="@+id/direccion" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Small Text"
-                android:id="@+id/numeroTelefono"
-                android:layout_gravity="top" />
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small Text"
+            android:id="@+id/numeroTelefono"
+            android:layout_gravity="top" />
+    </LinearLayout>
 
 </LinearLayout>
